@@ -118,7 +118,7 @@ static byte[] GetKey(string message, byte[] cipher, int length)
         Console.Write(binaryRepresentation + " ");
     }
     var remainLenth = length - message.Length;
-    var asterisks = "";
+
     for (int i = 0; i < remainLenth; i++)
     {
         Console.Write("********" + " ");

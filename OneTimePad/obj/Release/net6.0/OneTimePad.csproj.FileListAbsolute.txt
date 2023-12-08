@@ -12,3 +12,4 @@ C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\On
 C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\ref\OneTimePad.dll
 C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.pdb
 C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.genruntimeconfig.cache
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.csproj.AssemblyReference.cache

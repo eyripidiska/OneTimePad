@@ -1,0 +1,5 @@
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\publish\OneTimePad.exe
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\publish\OneTimePad.dll
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\publish\OneTimePad.deps.json
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\publish\OneTimePad.runtimeconfig.json
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\publish\OneTimePad.pdb

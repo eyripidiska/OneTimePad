@@ -1,0 +1,14 @@
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\OneTimePad.exe
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\OneTimePad.deps.json
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\OneTimePad.runtimeconfig.json
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\OneTimePad.dll
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\ref\OneTimePad.dll
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\bin\Release\net6.0\OneTimePad.pdb
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.AssemblyInfoInputs.cache
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.AssemblyInfo.cs
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.csproj.CoreCompileInputs.cache
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.dll
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\ref\OneTimePad.dll
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.pdb
+C:\Users\evri\Desktop\ASP.NET Core 6 Web API Fundamentals\CityInfo\OneTimePad\OneTimePad\obj\Release\net6.0\OneTimePad.genruntimeconfig.cache

@@ -10,19 +10,15 @@ while (true)
 
     Console.Write("Enter the message 2: ");
     string message2 = ReadWithAsterisk();
-    //string message2 = Console.ReadLine();
 
     Console.WriteLine("------------");
     // Generate a one-time pad key
-    //Console.WriteLine("Binary Representation Key: ");
     byte[] oneTimePadBits = message1.Length > message2.Length ? GenerateOneTimePadBytes(message1.Length) : GenerateOneTimePadBytes(message2.Length);
 
     Console.WriteLine("ASCII message 1: " + message1);
     Console.WriteLine("ASCII Binary Representation: ");
     byte[] message1ToBit = ASCIIStringToBytes(message1, true);
 
-    //Console.WriteLine("ASCII message 2: " + message2);
-    //Console.WriteLine("ASCII Binary Representation: ");
     byte[] message2ToBit = ASCIIStringToBytes(message2, false);
 
     // Encrypt the message using the one-time pad
@@ -36,7 +32,7 @@ while (true)
     byte[] key = GetKey(message1, c1);
 
 
-    string m2 = DeCrypt(c2, key);
+    string m2 = Decrypt(c2, key);
     Console.WriteLine("message 2: " + m2);
 
     Console.WriteLine("\n");
@@ -65,8 +61,6 @@ static byte[] GenerateOneTimePadBytes(int length)
     byte[] oneTimePad = new byte[length];
 
     random.NextBytes(oneTimePad);
-
-    //PrintBytes(oneTimePad);
 
     return oneTimePad;
 }
@@ -99,35 +93,42 @@ static byte[] GetKey(string message, byte[] cipher)
     Array.Copy(cipher, subsetcipher, message.Length);
 
 
-    byte[] encryptedBytes = new byte[message.Length];
+    byte[] key = new byte[message.Length];
 
     for (int i = 0; i < message.Length; i++)
     {
         // XOR the corresponding bytes of the message and one-time pad
-        encryptedBytes[i] = (byte)(message[i] ^ subsetcipher[i]);
+        key[i] = (byte)(message[i] ^ subsetcipher[i]);
     }
 
-    PrintBytes(encryptedBytes);
+    PrintBytes(key);
 
-    return encryptedBytes;
+    return key;
 }
 
-static string DeCrypt(byte[] cipher, byte[] key)
+static string Decrypt(byte[] cipher, byte[] key)
 {
+    var length = cipher.Length >= key.Length ? key.Length : cipher.Length;
 
-    byte[] subsetOneTimePad = new byte[cipher.Length];
-    Array.Copy(key, subsetOneTimePad, cipher.Length);
+    byte[] subsetcipher = new byte[length];
+    Array.Copy(cipher, subsetcipher, length);
 
+    byte[] dencryptedBytes = new byte[subsetcipher.Length];
 
-    byte[] dencryptedBytes = new byte[cipher.Length];
-
-    for (int i = 0; i < cipher.Length; i++)
+    for (int i = 0; i < length; i++)
     {
         // XOR the corresponding bytes of the message and one-time pad
-        dencryptedBytes[i] = (byte)(cipher[i] ^ subsetOneTimePad[i]);
+        dencryptedBytes[i] = (byte)(key[i] ^ subsetcipher[i]);
     }
 
     string asciiString = Encoding.ASCII.GetString(dencryptedBytes);
+
+    var remainLength = cipher.Length - asciiString.Length;
+
+    for (int i = 0; i < remainLength; i++)
+    {
+        asciiString = asciiString + "*";
+    }
 
     return asciiString;
 }

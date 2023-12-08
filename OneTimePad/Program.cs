@@ -29,7 +29,7 @@ while (true)
     byte[] c2 = Encrypt(message2, oneTimePadBits);
 
     Console.WriteLine("key: ");
-    byte[] key = GetKey(message1, c1);
+    byte[] key = GetKey(message1, c1, message1.Length >= message2.Length ? message1.Length : message2.Length);
 
 
     string m2 = Decrypt(c2, key);
@@ -86,7 +86,7 @@ static byte[] Encrypt(string message, byte[] oneTimePad)
     return encryptedBytes;
 }
 
-static byte[] GetKey(string message, byte[] cipher)
+static byte[] GetKey(string message, byte[] cipher, int length)
 {
 
     byte[] subsetcipher = new byte[message.Length];
@@ -101,7 +101,30 @@ static byte[] GetKey(string message, byte[] cipher)
         key[i] = (byte)(message[i] ^ subsetcipher[i]);
     }
 
-    PrintBytes(key);
+    var keyPrinted = key;
+
+    if (length > message.Length)
+    {
+
+    }
+
+    foreach (byte b in key)
+    {
+        // Convert each byte to binary representation
+        string binaryRepresentation = Convert.ToString(b, 2).PadLeft(8, '0');
+
+
+        // Display the binary representation
+        Console.Write(binaryRepresentation + " ");
+    }
+    var remainLenth = length - message.Length;
+    var asterisks = "";
+    for (int i = 0; i < remainLenth; i++)
+    {
+        Console.Write("********" + " ");
+    }
+
+    Console.WriteLine("\n------------");
 
     return key;
 }
